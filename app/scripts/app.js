@@ -25,6 +25,10 @@ angular.module('dataweekHackApp', [
         controller: 'SettingsCtrl',
         authenticate: true
       })
+      .when('/buy',{
+        templateUrl: 'partials/buy',
+        controller: 'BuyCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });

@@ -29,6 +29,14 @@ angular.module('dataweekHackApp', [
         templateUrl: 'partials/buy',
         controller: 'BuyCtrl'
       })
+      .when('/upload',{
+        templateUrl: 'partials/upload',
+        controller: 'UploadCtrl'
+      })
+      .when('/purchase',{
+        templateUrl: 'partials/purchase',
+        controller: 'PurchaseCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
